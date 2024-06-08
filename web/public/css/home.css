@@ -58,7 +58,7 @@
   width: 90vw;
   height: 50vh;
   display: flex;
-  margin: 10vh auto;
+  margin: 10vh auto 5vh auto;
   position: relative;
 }
 
@@ -104,7 +104,7 @@ p {
 .faq {
   width: 90vw;
   height: 100vh;
-  margin: 8vh auto 15vh auto;
+  margin: 5vh auto 15vh auto;
   display: flex;
   flex-wrap: wrap;
 }
