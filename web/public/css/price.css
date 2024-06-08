@@ -1,0 +1,91 @@
+.price-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 15vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.price-container>.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading>h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.pricelist {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.price {
+  width: 30%;
+  height: 90%;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.price>h2:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+.price>h2:nth-child(2) {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.price>h3 {
+  font-size: 1.3rem;
+}
+.description>p {
+  text-align: center;
+}
+.active-price {
+  border-color: var(--primary-btn-color);
+  height: 100%;
+}
+.active-price>button {
+  background-color: var(--primary-btn-color);
+  border: none;
+  color: white;
+}
+button {
+  background-color: white;
+  color: var(--primary-btn-color);
+  border: 1px solid var(--primary-btn-color);
+}
+button:hover {
+  color: var(--secondary-btn-color);
+  border-color: var(--secondary-btn-color);
+  background-color: white;
+}
+.active-price>button:hover {
+  background-color: var(--secondary-btn-color);
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .price-container {
+    height: auto;
+  }
+  .pricelist {
+    height: auto;
+  }
+  .price {
+    width: 90%;
+    height: 50vh;
+    margin: 5vh 0;
+  }
+  .active-price {
+    border-color: gray;
+    transform: scale(1);
+  }
+}

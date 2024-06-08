@@ -1,0 +1,91 @@
+.container {
+  width: 90vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  margin: 15vh auto;
+}
+.container>.form-container {
+  align-self: flex-start;
+  height: 100%;
+  width: 80%;
+  margin-top: 1rem;
+}
+.heading>h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.heading>p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+}
+form>div {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 1.1rem;
+  padding-bottom: 0.8rem;
+}
+input {
+  border: 1px solid #cfcfcf;
+  width: 80%;
+  height: 8vh;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  outline: none;
+}
+textarea {
+  border: 1px solid #cfcfcf;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  width: 80%;
+  outline: none;
+  height: 20vh;
+  resize: none;
+}
+.container>.img {
+  width: 65%;
+  height: 90%;
+  overflow: hidden;
+}
+.img>img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+iframe {
+  width: 100vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  } 
+  .container>.form-container {
+    width: 100%;
+    height: auto;
+  }
+  form>div {
+    margin: 1rem 0;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  input,textarea {
+    width: 90%;
+  }
+  .container>.img {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}

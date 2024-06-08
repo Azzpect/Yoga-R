@@ -1,0 +1,106 @@
+.intro {
+  width: 85vw;
+  height: 100vh;
+  margin: 20vh auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro>div {
+  width: 40%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro>div>h2 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.intro>div>p {
+  line-height: 1.7rem;
+}
+.intro>div>button {
+  margin-top: auto;
+}
+
+.intro>img {
+  width: 55%;
+  height: 70%;
+  align-self: center;
+}
+
+
+
+
+.offer-container {
+  width: 90vw;
+  height: 80vh;
+  margin: 10vh auto;
+}
+.offer-container>h2 {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.offer-container>div {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.offer-container>div>.offer {
+  width: 40%;
+  height: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+.offer>div {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: var(--primary-btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer>div>h2 {
+  color: white;
+}
+.offer>p {
+  position: relative;
+  width: 80%;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.offer>p>span {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    height: auto;
+  }
+  .intro>div {
+    width: 100%;
+  }
+  .intro>img {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+  .offer-container {
+    height: auto;
+  }
+  .offer-container>div>.offer {
+    width: 100%;
+    height: auto;
+  }
+}
+

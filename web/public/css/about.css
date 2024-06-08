@@ -1,0 +1,144 @@
+.intro {
+  width: 85vw;
+  height: 100vh;
+  margin: 20vh auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro>div {
+  width: 40%;
+}
+
+.intro>div>h2 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.intro>div>p {
+  line-height: 1.7rem;
+}
+
+.intro>img {
+  width: 55%;
+  height: 70%;
+  align-self: center;
+}
+
+.info {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(215, 224, 184);
+}
+
+.info>div {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info>div>h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  transition: all 500ms linear;
+  color: white;
+}
+.info>div>h4 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.partners {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10vh 0;
+}
+.partners>h2 {
+  font-size: 2rem; 
+  font-weight: 800;
+}
+.partners>.img-container {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img-container>.img {
+  width: 20%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-container>.img>img {
+  width: 70%;
+  aspect-ratio: 1/1;
+  border: 0.3rem solid var(--primary-btn-color);
+  border-radius: 50%;
+}
+.img-container>.img>.img-details {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dddddd;
+  border-bottom: 0.8rem solid var(--primary-btn-color);
+  padding: 2rem;
+}
+.img-details>h3 {
+  padding: 0.4rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    height: auto;
+    margin: 20vh auto;
+    margin-bottom: 10vh;
+  }
+  .intro>div {
+    width: 80vw;
+  }
+  .intro>div>h2 {
+    font-size: 3.5rem;
+  }
+  .intro>div>p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .intro>img {
+    width: 80%;
+    height: 40%;
+    margin: 5vh auto;
+  }
+  .info {
+    height: 20vh;
+  }
+  .partners {
+    height: auto;
+  }
+  .partners>.img-container {
+    flex-direction: column;
+  }
+  .img-container>.img {
+    width: 60%;
+    margin: 2rem;
+  }
+  .img-container>.img>.img-details {
+    width: 100%;
+    height: 45%;
+  }
+  
+}

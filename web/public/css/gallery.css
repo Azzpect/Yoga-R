@@ -1,0 +1,29 @@
+.img-container {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15vh auto;
+}
+.img-container>.img {
+  width: 23%;
+  aspect-ratio: 1/0.8;
+  margin: 0.7rem 0; 
+  cursor: pointer;
+  overflow: hidden;
+}
+.img>img {
+  width: 100%;
+  height: 100%;
+  transition: all 200ms linear;
+}
+.img:hover > img {
+  transform: scale(1.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .img-container>.img {
+    width: 45%;
+    margin: 0.3rem 0;
+  }
+}
