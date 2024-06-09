@@ -3,7 +3,7 @@
   height: 120vh;
   display: flex;
   align-items: center;
-  margin: 15vh auto;
+  margin: 20vh auto;
 }
 .container>.form-container {
   align-self: flex-start;

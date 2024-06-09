@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 15vh auto;
+  margin: 20vh auto;
 }
 .img-container>.img {
   width: 23%;

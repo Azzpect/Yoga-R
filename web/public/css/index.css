@@ -125,6 +125,7 @@ header {
   margin-right: 5%;
   align-items: center;
   justify-content: space-around;
+  z-index: 5;
 }
 
 .navbar>a {
@@ -135,6 +136,15 @@ header {
 
 .navbar>a:hover {
   color: var(--primary-btn-color);
+}
+#logo {
+  position: fixed;
+  top: 12vh;
+  left: 2rem;
+}
+#logo>img {
+  width: 5rem;
+  aspect-ratio: 1/1;
 }
 
 footer {
