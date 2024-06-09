@@ -203,6 +203,9 @@ footer>div>p {
   .navbar>a {
     margin: 0.5rem 0;
   }
+  #logo {
+    top: 8vh;
+  }
   footer {
     height: 15vh;
   }
