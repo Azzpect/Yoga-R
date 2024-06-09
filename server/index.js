@@ -1,6 +1,7 @@
 const express = require("express")
 const cors = require("cors")
 const path = require("path")
+const helmet = require("helmet")
 require("dotenv").config()
 
 
@@ -10,6 +11,8 @@ const port = process.env.PORT
 app.use(express.json())
 app.use(cors())
 app.use("/public", express.static(path.join(__dirname, "../web/public")))
+app.use(helmet())
+
 
 
 app.get("/", (req, res) => {
@@ -29,6 +32,9 @@ app.get("/gallery", (req, res) => {
 })
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "../web/contact.html"))
+})
+app.all("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../web/404.html"))
 })
 
 
