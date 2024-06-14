@@ -1,7 +1,7 @@
 .intro {
   width: 100vw;
   height: auto;
-  margin: 20vh auto 10vh auto;
+  margin: 15vh auto 5rem auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -102,6 +102,7 @@
   }
   .intro>div {
     width: 100%;
+    margin-left: 0;
   }
   .intro>img {
     width: 100%;
