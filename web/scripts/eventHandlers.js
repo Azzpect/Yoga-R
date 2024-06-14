@@ -14,6 +14,19 @@ function handleIntersection(element, func) {
   observer.observe(element);
 }
 
+
+document.querySelector("footer>.email").addEventListener("click", e => {
+  const recipient = 'sales@vr4exim.com';
+  const subject = 'Hello!';
+  const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}`;
+  window.location.href = mailtoLink;
+})
+document.querySelector("footer>.phone").addEventListener("click", e => {
+  const number = 6379088867;
+  const telLink = `tel:${number}`;
+  window.location.href = telLink;
+})
+
 let ham = document.querySelector(".hamburger")
 let nav = document.querySelector(".navbar")
 ham.addEventListener("click", e => {
