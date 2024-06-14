@@ -1,6 +1,6 @@
 .intro {
-  width: 85vw;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
   margin: 20vh auto 10vh auto;
   display: flex;
   justify-content: space-between;
@@ -8,10 +8,11 @@
 }
 
 .intro>div {
-  width: 40%;
-  height: 85%;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  margin-left: 5rem;
 }
 
 .intro>div>h2 {
@@ -19,15 +20,17 @@
   font-weight: 800;
 }
 .intro>div>p {
-  line-height: 1.7rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  text-align: justify;
+  margin: 2rem 0;
 }
-.intro>div>button {
+.intro>div>a {
   margin-top: auto;
 }
-
 .intro>img {
-  width: 55%;
-  height: 70%;
+  aspect-ratio: 1/0.7;
+  width: 40%;
   align-self: center;
 }
 
@@ -36,11 +39,11 @@
 
 .offer-container {
   width: 90vw;
-  height: 80vh;
+  height: auto;
   margin: 10vh auto;
 }
 .offer-container>h2 {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -53,28 +56,38 @@
 }
 .offer-container>div>.offer {
   width: 40%;
-  height: 45%;
+  height: auto;
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  border: 2px solid var(--primary-btn-color);
+  border-radius: 10rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
 }
 .offer>div {
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 50%;
-  background-color: var(--primary-btn-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0.4rem solid var(--primary-btn-color);
 }
 .offer>div>h2 {
-  color: white;
+  color: black;
 }
 .offer>p {
   position: relative;
   width: 80%;
-  padding-top: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding: 2rem 1rem;
+  border: 0.5rem solid var(--primary-btn-color);
+  border-top-color: white;
+  border-left-color: white;
+  border-bottom-color: white;
+  border-radius: 10rem;
 }
 
 .offer>p>span {

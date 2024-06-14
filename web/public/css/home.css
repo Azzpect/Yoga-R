@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100vw;
-  height: 120vh;
+  height: 50rem;
   margin: 10vh 0;
 }
 
@@ -43,7 +43,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
   line-height: 10rem;
 }
@@ -56,19 +56,17 @@
 
 .features {
   width: 90vw;
-  height: 50vh;
+  height: auto;
   display: flex;
-  margin: 10vh auto 5vh auto;
+  margin: 5rem auto;
   position: relative;
 }
 
-.features>div>.line {
-  content: "";
-  height: 0.2rem;
-  background-color: var(--primary-btn-color);
+.features>.line {
+  width: 0px;
+  height: 0.3rem;
   position: absolute;
-  top: 10%;
-  left: 15%;
+  background-color: var(--primary-btn-color);
   z-index: -1;
 }
 
@@ -103,24 +101,27 @@ p {
 
 .faq {
   width: 90vw;
-  height: 100vh;
-  margin: 5vh auto 15vh auto;
+  height: auto;
+  margin: 7rem auto;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .faq>div {
-  width: 50%;
+  width: 60%;
 }
 
 .faq>div>ol {
-  margin-top: 15%;
+  margin-top: 3rem;
 }
 
 .faq>div>h1 {
   font-size: 4rem;
 }
-
+.faq>div>ol>li {
+  margin: 2rem 0;
+}
 .faq>div>ol>li::marker {
   font-weight: bold;
   font-size: 22px;
@@ -131,8 +132,8 @@ p {
 }
 
 .faq>img {
-  width: 50%;
-  height: 100%;
+  aspect-ratio: 1/0.7;
+  width: 40%;
 }
 
 .contact {
@@ -155,8 +156,7 @@ p {
   z-index: 1;
 }
 
-.contact>h2,
-button {
+.contact>h2 {
   position: relative;
   z-index: 2;
   color: white;

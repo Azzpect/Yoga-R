@@ -1,14 +1,16 @@
 .intro {
-  width: 85vw;
-  height: 100vh;
-  margin: 20vh auto 5vh auto;
+  width: 100vw;
+  height: auto;
+  margin: 15vh auto 10rem auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .intro>div {
   width: 40%;
+  margin-left: 5rem;
 }
 
 .intro>div>h2 {
@@ -20,9 +22,8 @@
 }
 
 .intro>img {
-  width: 55%;
-  height: 70%;
-  align-self: center;
+  aspect-ratio: 1/0.8;
+  width: 20%;
 }
 
 .info {
@@ -31,7 +32,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(215, 224, 184);
+  background-color: var(--primary-btn-color);
 }
 
 .info>div {

@@ -1,9 +1,22 @@
+.tag-container {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15vh;
+}
+.tag-container>button {
+  width: 5em;
+  height: 3em;
+  border-radius: 5em;
+  margin: 0 0.5rem;
+}
 .img-container {
   width: 90vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20vh auto;
+  margin: 5rem auto;
 }
 .img-container>.img {
   width: 23%;
@@ -16,6 +29,7 @@
   width: 100%;
   height: 100%;
   transition: all 200ms linear;
+  border-radius: 1rem;
 }
 .img:hover > img {
   transform: scale(1.3);

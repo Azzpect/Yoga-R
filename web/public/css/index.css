@@ -10,8 +10,8 @@
 
 :root {
   --dark: rgb(25, 25, 35);
-  --primary-btn-color: rgb(73, 163, 242);
-  --secondary-btn-color: rgb(3, 140, 76);
+  --primary-btn-color: #ff5e00;
+  --secondary-btn-color: white;
   --font-family: "Roboto", sans-serif;
 }
 
@@ -91,19 +91,23 @@ body {
 }
 
 button {
-  background-color: var(--primary-btn-color);
+  position: relative;
+  background-color: var(--secondary-btn-color);
+  border: 0.3rem solid var(--primary-btn-color);
   border-radius: 6px;
   cursor: pointer;
   font-size: 18px;
   width: 12em;
   height: 3.5em;
   font-weight: bolder;
-  color: white;
+  color: var(--dark);
   transition: all 300ms linear;
+  z-index: 2;
 }
 
 button:hover {
-  background-color: var(--secondary-btn-color);
+  background-color: var(--primary-btn-color);
+  color: white;
 }
 
 header {
@@ -112,7 +116,7 @@ header {
   background-color: var(--dark);
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -131,19 +135,18 @@ header {
 .navbar>a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 
 .navbar>a:hover {
   color: var(--primary-btn-color);
 }
 #logo {
-  position: fixed;
-  top: 12vh;
-  left: 2rem;
+  height: 80%;
+  margin-left: 1rem;
 }
 #logo>img {
-  width: 5rem;
+  height: 100%;
   aspect-ratio: 1/1;
 }
 
@@ -158,7 +161,7 @@ footer {
 }
 
 footer>div {
-  width: 12%;
+  width: 15%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -166,12 +169,14 @@ footer>div {
 
 footer>div>p {
   color: white;
+  font-size: 1.2rem;
 }
 .handles {
   width: 10%;
 }
 .handles>svg {
   cursor: pointer;
+  fill: var(--primary-btn-color);
 }
 #copyright {
   color: white;
@@ -202,9 +207,6 @@ footer>div>p {
   }
   .navbar>a {
     margin: 0.5rem 0;
-  }
-  #logo {
-    top: 8vh;
   }
   footer {
     height: 15vh;
