@@ -193,7 +193,7 @@ p {
     height: auto;
   }
 
-  .features>div>.line {
+  .features>.line {
     display: none;
   }
 
