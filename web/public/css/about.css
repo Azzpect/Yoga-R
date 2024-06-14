@@ -112,6 +112,7 @@
   .intro>div {
     width: 80vw;
     margin-left: 2rem;
+    margin-right: 2rem;
   }
   .intro>div>h2 {
     font-size: 3.5rem;
