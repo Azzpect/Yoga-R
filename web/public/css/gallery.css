@@ -5,11 +5,18 @@
   margin: auto;
   margin-top: 15vh;
 }
-.tag-container>button {
-  width: 5em;
+.tag-container>.tag {
+  width: 5.5em;
   height: 3em;
   border-radius: 5em;
   margin: 0 0.5rem;
+  background-color: var(--secondary-btn-color);
+  border: 0.3rem solid var(--primary-btn-color);
+  color: var(--dark);
+}
+#active {
+  background-color: var(--primary-btn-color);
+  color: var(--secondary-btn-color);
 }
 .img-container {
   width: 90vw;
