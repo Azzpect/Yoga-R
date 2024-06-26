@@ -221,10 +221,13 @@ footer>div>p {
   }
 
   footer>div {
+    width: 20%;
+  }
+  footer>.handles {
     width: 30%;
   }
 
   footer>div>p {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 }
