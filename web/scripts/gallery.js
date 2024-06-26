@@ -1,5 +1,5 @@
 let tags = document.querySelectorAll(".tag");
-let images = { charcoal: 9, cooir: 26, granite: 9 };
+let images = { charcoal: 9, coir: 26, granite: 5 };
 loadImage("charcoal", 9);
 tags.forEach((tag) => {
   tag.addEventListener("click", (e) => {

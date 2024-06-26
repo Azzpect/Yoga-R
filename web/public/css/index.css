@@ -172,12 +172,19 @@ footer>div>p {
   color: white;
   font-size: 1.2rem;
 }
+.phone>img, .email>img {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+}
 .handles {
   width: 10%;
 }
-.handles>svg {
+.handles>a {
   cursor: pointer;
-  fill: var(--primary-btn-color);
+}
+.handles>a>img {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
 }
 #copyright {
   color: white;
