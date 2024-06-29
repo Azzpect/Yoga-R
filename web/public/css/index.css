@@ -113,7 +113,7 @@ button:hover {
 header {
   width: 100vw;
   height: 10vh;
-  background-color: var(--dark);
+  background-color: #313131;
   display: flex;
   align-items: center;
   justify-content: space-between;
