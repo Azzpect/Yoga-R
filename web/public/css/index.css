@@ -113,7 +113,7 @@ button:hover {
 header {
   width: 100vw;
   height: 10vh;
-  background-color: var(--dark);
+  background-color: var(--primary-btn-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,7 +139,7 @@ header {
 }
 
 .navbar>a:hover {
-  color: var(--primary-btn-color);
+  color: var(--dark);
 }
 #logo {
   height: 80%;
